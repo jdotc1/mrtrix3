@@ -202,7 +202,10 @@ def pipe_errors_to_less_handler():
     with tempfile.NamedTemporaryFile() as tf:
       tf.write (colorize(error_stream).encode (errors='ignore'))
       tf.flush()
-      os.system ("less -RX " + tf.name)
+      try:
+        subprocess.call ([ "less", "-RX", tf.name ])
+      except OSError:
+        pass  # The optional pager must not obscure the build failure.
 
 
 
