@@ -1,3 +1,13 @@
+## Tools for diffusion MRI and tractography workflows
+
+This is a development fork of [MRtrix3](https://github.com/MRtrix3/mrtrix3), a toolkit for diffusion MRI analysis. Upstream provides methods including constrained spherical deconvolution and probabilistic tractography, alongside command-line processing tools and the MRView viewer. It is useful for building workflows that connect diffusion images, fiber-orientation estimates, and tractography outputs.
+
+**Published fork work:** [Commit 27b713f](https://github.com/jdotc1/mrtrix3/commit/27b713f264a7416762110f38364610e076344f07) passes a build-error log path directly to the pager. This separate fork commit documents a focused build-diagnostics change; upstream acceptance and inclusion on the default branch are separate questions.
+
+Start with the [official downloads](https://www.mrtrix.org/download/) and [documentation](https://mrtrix.readthedocs.org) for installation and workflows. The original setup and community guidance are retained below. The [default-branch comparison](https://github.com/MRtrix3/mrtrix3/compare/master...jdotc1:master) shows the current checkout alongside upstream.
+
+---
+
 # MRtrix
 
 [![Build Status](https://github.com/MRtrix3/mrtrix3/workflows/checks/badge.svg)](https://github.com/MRtrix3/mrtrix3/actions)
